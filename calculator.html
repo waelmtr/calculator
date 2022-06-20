@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.operation{
+    background-color: rgb(11, 17, 121);
+    border-color:rgb(9, 11, 48) ;
+    font-size: 20px;
+}
+.equal{
+    background-color: rgb(9, 104, 9);
+    border-color: rgb(10, 63, 10);
+    font-size: 20px;
+}
+.number{
+    background-color: brown;
+    border-color: rgb(117, 7, 7);
+    font-size: 20px;
+}
+.input{
+    border-style: groove;
+    border-color:rgb(20, 20, 126) ;
+    color: rgb(196, 51, 63);
+    width: 262px;
+    height: 60px; 
+    border-radius: 15px;
+    background-image: url('images/background.jpg');
+    font-size: 20px;
+
+    }
+body{
+  max-height: 100px;
+    background-image: url('images/background.jpg');
+}
+.squar{
+    background-color:brown;
+}
+.div{
+    width: 270px;
+    height: 480px;
+    margin: 100px 400px 100px 470px;
+    border-style: solid;
+    border-width: 25px;
+    border-right-color: rgb(12, 12, 70);
+    border-left-color: rgb(12, 12, 70);
+    border-top-color: blueviolet;
+    border-bottom-color: blueviolet;
+    
+}
+.ratios{
+    border-radius: 50%;
+    font-size: 20px;
+    border-color:rgb(20, 20, 126) ;
+    background-color: blueviolet;
+    border-width: 7px;
+    height: 65px;
+    margin-left: 17px;
+    }
+</style>
+</head>
+<body>
+    
+  <div style=" border-radius: 60px;" class="div">
+<input type="text" id="a" class="input" maxlength="11" ><br>
+<table  style="border-collapse: collapse;">
+<tr>
+    <td><button onclick="display('%')" style="width: 65px; height: 65px; border-radius: 50%; font-size: 20px;" >%</button></td>
+    <td><img src="images/back1.jpg" onclick="back()" style="width: 65px; height: 65px; border-radius: 50%;"></td>
+    <td><img src="images/abs.png" onclick="abs()" style="width: 65px; height: 65px; border-radius: 50%;"></td>
+    <td id="l"><img src="images/ratios.png" onclick="ratios()" id="id" style="width: 65px; height: 65px; border-radius: 50%;"></td>
+</tr>
+<tr id="tr1">
+<td><img onclick="clearresult()" src="images/clear.png"  style="width: 65px; height: 65px;border-radius: 50%;"></td>
+<td><img onclick="pi('3.1416')" src="images/pi.jpg" style="margin: right 10px; ; width: 65px; height: 65px; border-radius: 50%;"></td>
+<td><img onclick="fun()" src="images/sqrt.jpg" style="width: 65px; height: 65px; border-radius: 50%;"></td>
+<td><button onclick="display('-')"  style=" border-radius: 50%; width: 65px;height: 65px;" class="operation">-</button></td>
+
+</tr>
+
+<tr id="tr2">
+<td><button onclick="display('7')"  style="width: 65px; height: 65px; border-radius: 50%;" class="number">7</button></td>
+<td><button onclick="display('8')"  style="width: 65px;height: 65px; border-radius: 50%;" class="number">8</button></td>
+<td><button onclick="display('9')"  style="width: 65px;height: 65px; border-radius: 50%;" class="number">9</button></td>
+<td><button onclick="display('+')" style="width: 65px;height: 65px; border-radius: 50%;"  class="operation">+ </button></td>
+</tr>
+
+<tr id="tr3">
+<td><button onclick="display('4')" style="width:65px;height: 65px; border-radius: 50%;" class="number">4</button></td>
+<td><button onclick="display('5')" style="width: 65px;height: 65px; border-radius: 50%;" class="number">5</button></td>
+<td><button onclick="display('6')" style="width: 65px;height: 65px; border-radius: 50%;" class="number">6</button></td>
+<td><button onclick="display('/')" style="width: 65px;height: 65px; border-radius: 50%;" class="operation">/</button></td>
+</tr>
+<tr id="tr4">
+    <td><button onclick="display('1')" style="width: 65px;height: 65px; border-radius: 50%;" class="number">1</button></td>
+    <td><button onclick="display('2')" style="width: 65px;height: 65px; border-radius: 50%;" class="number">2</button></td>
+    <td><button onclick="display('3')" style="width: 65px;height: 65px; border-radius: 50%;" class="number">3</button></td>
+    <td><button onclick="display('*')" style="width: 65px;height: 65px; border-radius: 50%;" class="operation">x</button></td>
+</tr>
+<tr>
+    <td><button onclick="display('.')" style="border-radius: 50%;width: 65px;height: 65px; border-radius: 50%;font-size: 40px;">.</button></td>
+    <td><button onclick="display('0')" style=" border-radius: 50%;width: 65px;height: 65px; border-radius: 50%;" class="number">0</button></td>
+    <td><img src="images/x3.jpg" onclick="squar()"  style=" border-radius: 50%;width: 65px;height: 65px; border-radius: 50%;" class="squar"></td>
+    <td><button onclick ="result()"  style=" border-radius: 50%;width: 65px;height: 65px; border-radius: 50%;" class="equal">=</button></td>
+</tr>
+
+</table>
+ </div>
+<script src="script.js">
+  
+</script>
+</body>
+</html>
