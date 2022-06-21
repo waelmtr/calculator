@@ -74,7 +74,7 @@ function ratios(){
    
 }
 function add(){
-    document.getElementById('l').innerHTML = '<img src="ratios1.png" onclick="delet()" id="delet" style="width: 65px; height: 65px; border-radius: 50%; background-color="blue";">';
+    document.getElementById('l').innerHTML = '<img src="images/ratios1.png" onclick="delet()" id="delet" style="width: 65px; height: 65px; border-radius: 50%; background-color="blue";">';
 }  
 
 
@@ -89,7 +89,7 @@ var del4 =document.getElementById('id4');
 del4.parentNode.removeChild(del4);
 var delet = document.getElementById('delet');
 delet.parentNode.removeChild(delet);
-document.getElementById('l').innerHTML = '<img src="ratios.png" onclick="ratios()" style="width: 65px; height: 65px; border-radius: 50%;">';
+document.getElementById('l').innerHTML = '<img src="images/ratios.png" onclick="ratios()" style="width: 65px; height: 65px; border-radius: 50%;">';
 }
 function getcos(){
   //x = document.getElementById('a').value ;
